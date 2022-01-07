@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  jwt_demo:
+    image: ${DOCKER_REGISTRY-}jwtdemo
+    build:
+      context: .
+      dockerfile: JWT_Demo/Dockerfile
